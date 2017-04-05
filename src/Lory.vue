@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import { lory } from 'lory.js'
 
 export default {
 
@@ -28,6 +27,7 @@ export default {
   },
 
   mounted () {
+    const lory = require('lory.js').lory
     this.slider = lory(this.$el, this.options)
   },
 
